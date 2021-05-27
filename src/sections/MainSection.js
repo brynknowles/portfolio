@@ -1,31 +1,66 @@
-import React, { useEffect, useState } from "react";
-import SideBar from "../components/SideBar";
-import NavBar from "../components/NavBar";
-// import ProjectContainer from "../containers/ProjectContainer";
+import { useState } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import LPImg from '../images/LitterPickerImage.png'
+import ProjectContainer from '../containers/ProjectContainer.js'; 
 import styled from "styled-components";
-
 
 function MainSection() {
     // commented out state and projects container for now
-    // const [projects, setProjects] = useState("");
+    const [projects, setProjects] = useState("");
 
-    //this is where you will put your array of project objects to iterate over and display in the return
-    // normally a useEffect would go here like so:
-        // useEffect(() => {
-        //     fetch("http://www.someaddress.com/api/projects/all")
-        //     .then((resp) => resp.json())
-        //     .then((projectsAPI) => setProjects(projectsAPI));
-        // }, []);
+    const projectsArray = [
+        {
+            // link: "/litterpicker",
+            imageURL: LPImg,
+            title: "LitterPicker",
+            summary: "A single page web app where a user can create litter cleanup events",
+            code: "code",
+            demo: "demo"
+        },
+        {
+            // link: "/my-portfolio",
+            imageUrl: "Project imageURL",
+            title: "My Portfolio",
+            summary: "",
+            code: "code",
+            demo: "demo"
+        },
+        {
+            // link: "/monorail",
+            imageUrl: "Project imageUrl",
+            title: "MonorailTCG",
+            summary: "",
+            code: "code",
+            demo: "demo"
+        },
+        {
+            // link: "/brelby",
+            imageUrl: "Project imageUrl",
+            title: "Brelby",
+            summary: "",
+            code: "code",
+            demo: "demo"
+        },
+        {
+            // link: "/ruby-icecream-shop",
+            imageUrl: "Project imageUrl",
+            title: "Ruby Ice Cream Shop",
+            summary: "",
+            code: "code",
+            demo: "demo"
+        },
+    ]
+
+    setProjects(projectsArray)
+    console.log("projects after setProjects in MainSection ", projects)
 
     return (
         <div>
-            {/* <SideBar /> */}
-            <NavBar />
-            {/* {projects === "" ? (
+            {projects === "" ? (
                 <div> nada </div>
             ) : (
                 <ProjectContainer projects={projects} />
-            )} */}
+            )}
         </div>
     );
 }
