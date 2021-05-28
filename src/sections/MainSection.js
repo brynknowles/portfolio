@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import LPImg from '../images/LitterPickerImage.png'
 import ProjectContainer from '../containers/ProjectContainer.js'; 
@@ -51,8 +51,10 @@ function MainSection() {
         },
     ]
 
-    setProjects(projectsArray)
-    console.log("projects after setProjects in MainSection ", projects)
+    useEffect(() => {
+        setProjects(projectsArray)
+        console.log("projects after setProjects in MainSection ", projects)
+    }, [])
 
     return (
         <div>
