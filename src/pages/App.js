@@ -19,7 +19,7 @@ function App() {
           <Route path="/articles" component={Articles} />
           <Route path="/about" component={About} />
       </Router>
-      <MainSection />;
+      <MainSection />
     </div>
   );
 }
