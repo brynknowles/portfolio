@@ -3,8 +3,7 @@ import { useState, useEffect } from 'react';
 import ProjectCard from "../components/ProjectCard";
 import LPImg from '../images/LitterPickerImage.png'
 
-function ProjectContainer(props) {
-    console.log("props in ProjectContainer ", props)
+function ProjectContainer() {
 
     const [projects, setProjects] = useState("");
 
