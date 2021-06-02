@@ -45,7 +45,7 @@ function ArticleContainer() {
 
     const renderArticleCards = (articles) => {
         console.log("projects in renderArticleCards ", articles);
-        return articles.map((article) => <ArticleCard key={article.title} article={article} />);
+        return articles.map((article) => <ArticleCard key={article.id} article={article} />);
     }
     return (
         <div>
