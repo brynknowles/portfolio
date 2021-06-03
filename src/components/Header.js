@@ -2,9 +2,11 @@ import React from 'react'
 
 function Header() {
     return (
-        <div>
+        <header>
+            <span className="logo">{"BK"}</span>
             <h1>BK</h1>
-        </div>
+            <button>Dark Mode</button>
+        </header>
     )
 }
 

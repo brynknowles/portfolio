@@ -1,4 +1,4 @@
-import Images from './public/images/ArticleImages.js'
+import Images from './images/ArticleImages.js'
 
 const { forms, devTools, rubyApp, rubyEnums } = Images;
 const articles = [
