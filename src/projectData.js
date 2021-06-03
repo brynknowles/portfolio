@@ -1,3 +1,7 @@
+import Images from './images/ProjectImages.js';
+
+const { litterPicker, portfolio, brelbys, ricShop } = Images
+
 const projects = [
     {
         id: 1,
@@ -7,7 +11,7 @@ const projects = [
         link: null,
         code: null,
         demo: null,
-        image: "https://via.placeholder.com/300",
+        image: litterPicker,
     },
     {
         id: 2,
@@ -17,7 +21,7 @@ const projects = [
         link: null,
         code: null,
         demo: null,
-        image: "https://via.placeholder.com/300",
+        image: portfolio,
     },
     {
         id: 3,
@@ -27,7 +31,7 @@ const projects = [
         link: null,
         code: null,
         demo: null,
-        image: "https://via.placeholder.com/300",
+        image: brelbys,
     },
     {
         id: 4,
@@ -47,7 +51,7 @@ const projects = [
         link: null,
         code: null,
         demo: null,
-        image: "https://via.placeholder.com/300",
+        image: ricShop,
     }
 ];
 

@@ -44,7 +44,7 @@ function ArticleContainer() {
     // }, [])
 
     const renderArticleCards = (articles) => {
-        console.log("projects in renderArticleCards ", articles);
+        console.log("articles in renderArticleCards ", articles);
         return articles.map((article) => <ArticleCard key={article.id} article={article} />);
     }
     return (

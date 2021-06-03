@@ -1,5 +1,5 @@
 import React from "react";
-import projects from "../projectData";
+import projects from "../projectData.js";
 import ProjectCard from "../components/ProjectCard";
 
 function ProjectContainer() {

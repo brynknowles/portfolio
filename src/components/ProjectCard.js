@@ -2,7 +2,9 @@ import React from "react";
 
 function ProjectCard({ project }) {
     console.log("project in ProjectCard ", project);
+
     const { id, name, summary, primaryTechnology, link, code, demo, image } = project
+    
     return (
         <div>
             <h4>{name}</h4>
